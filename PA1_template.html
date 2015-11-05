@@ -111,7 +111,7 @@ plot(x=intervalsMeans$interval, y=intervalsMeans$steps,
 <pre class="r"><code>sum(is.na(data$steps))</code></pre>
 <pre><code>## [1] 2304</code></pre>
 <p>Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc. Create a new dataset that is equal to the original dataset but with the missing data filled in.</p>
-<p>We will replace the NA values with the mean for that interval across all days(from table intervalsTotals)</p>
+<p>We will replace the NA values with the mean for that interval across all days(from the intervalsMeans table previously created )</p>
 <pre class="r"><code>data2 &lt;- data
 for (i in 1:nrow(data2)){
          if (is.na(data2$steps[i])){

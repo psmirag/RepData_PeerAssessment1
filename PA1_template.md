@@ -88,7 +88,7 @@ sum(is.na(data$steps))
 
 Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc. Create a new dataset that is equal to the original dataset but with the missing data filled in.
 
-We will replace the NA values with the mean for that interval across all days(from table intervalsTotals)
+We will replace the NA values with the mean for that interval across all days(from the intervalsMeans table previously created )
 
 ```r
 data2 <- data
